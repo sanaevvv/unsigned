@@ -100,8 +100,32 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+li{
+  list-style: none;
+}
+
+.dropzone{
+  height: 8rem;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px dashed salmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.active {
+  border: 2px solid rebeccapurple;
+}
+
+.image-list{
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-items: center;
+  gap: 10px;
 }
